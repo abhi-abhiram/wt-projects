@@ -1,0 +1,105 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Main from '../../layouts/Main.astro';
+---
+
+<Layout title='WT Projects | Time Table'>
+  <Main>
+    <h1>Time Table</h1>
+    <div style='margin-top: 1rem;'>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>9:50 - 10:40</th>
+            <th>10:40 - 11:30</th>
+            <th>11:30 - 12:20</th>
+            <th>12:20 - 1:10</th>
+            <th></th>
+            <th>1:50 - 2:40</th>
+            <th>2:40 - 3:30</th>
+            <th>3:30 - 4:20</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td colspan='3'>ACSES LAB</td>
+            <td> HONOURS</td>
+            <td rowspan='7'>Lunch</td>
+            <td>CN</td>
+            <td>DA</td>
+            <td>CS</td>
+          </tr>
+          <tr>
+            <td> Tuesday</td>
+            <td>CN</td>
+            <td>DA</td>
+            <td>CS</td>
+            <td>SE</td>
+            <td>WT</td>
+            <td>DA</td>
+            <td>LIBRARY</td>
+          </tr>
+          <tr>
+            <td> Wednesday</td>
+            <td>WT</td>
+            <td>CS</td>
+            <td>CN</td>
+            <td> HONOURS</td>
+            <td>SE</td>
+            <td>WT</td>
+            <td>SPORTS</td>
+          </tr>
+          <tr>
+            <td> Thursday</td>
+            <td> DA</td>
+            <td>CN</td>
+            <td>CS</td>
+            <td> LIBRARY</td>
+            <td> SE</td>
+            <td>INTERNSHIP</td>
+            <td>SPORTS</td>
+          </tr>
+          <tr>
+            <td> Friday</td>
+            <td colspan='3'>WT LAB</td>
+            <td> HONOURS</td>
+            <td>WT</td>
+            <td>SE</td>
+            <td>CS</td>
+          </tr>
+          <tr>
+            <td> Saturday</td>
+            <td>SE</td>
+            <td>WT</td>
+            <td>CN</td>
+            <td>DA</td>
+            <td colspan='3'>CN & UML LAB</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </Main>
+</Layout>
+
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  th {
+    white-space: nowrap;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+
+  td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+</style>
