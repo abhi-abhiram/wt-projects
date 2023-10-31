@@ -1,0 +1,372 @@
+<header class='header'>
+  <div class='content'>
+    <img id='logo' src='./foundit.svg' alt='' />
+    <div class='header-text'>
+      <p class='he'>Already Registered ? <a id='login-text'>Login</a></p>
+    </div>
+  </div>
+</header>
+<section class='registerationsection'>
+  <div class='progressbox'>
+    <div style='position: relative;'>
+      <ul class='listitems'>
+        <li class='active listItem'>
+          <div class='levelcirle activecirle'>1</div>
+          <p class='progress-text'>
+            Basic Details <br /><span class='subcaption'
+              >15 seconds to complete</span
+            >
+          </p>
+          <svg
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke-width='1.5'
+            stroke='currentColor'
+            class='listicon'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              d='M8.25 4.5l7.5 7.5-7.5 7.5'></path>
+          </svg>
+        </li>
+        <li class='listItem'>
+          <div class='levelcirle'>2</div>
+          <p class='progress-text'>
+            Verification center <br /><span class='subcaption'
+              >15 seconds to complete</span
+            >
+          </p>
+        </li>
+        <li class='listItem'>
+          <div class='levelcirle'>3</div>
+          <p class='progress-text'>
+            Proffessional Details<br /><span class='subcaption'
+              >15 seconds to complete</span
+            >
+          </p>
+        </li>
+        <li class='listItem'>
+          <div class='levelcirle'>4</div>
+          <p class='progress-text'>
+            Employement Details<br /><span class='subcaption'
+              >15 seconds to complete</span
+            >
+          </p>
+        </li>
+        <li class='listItem'>
+          <div class='levelcirle'>5</div>
+          <p class='progress-text'>
+            Job Preference<br /><span class='subcaption'
+              >15 seconds to complete</span
+            >
+          </p>
+        </li>
+        <li class='listItem'>
+          <div class='levelcirle'>6</div>
+          <p class='progress-text'>
+            Start Job Search<br /><span class='subcaption'
+              >15 seconds to complete</span
+            >
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <section class='registrationform'>
+    <h2 class='formheading'>Create an Account</h2>
+    <p class='formcaption'>It only takes a couple of minutes to get started!</p>
+    <p class='tag'>it's free</p>
+    <form class='form'>
+      <label class='label'>Full Name *</label>
+      <input class='input' type='text' placeholder='Enter your full name' />
+      <label class='label'>Email Address *</label>
+      <input
+        class='input'
+        type='email'
+        placeholder='Enter your email address'
+      />
+      <label class='label'>Password *</label>
+      <input class='input' type='password' placeholder='Enter your password' />
+      <label class='label'>Mobile Number *</label>
+      <div class='mobileinput'>
+        <select class='countrycode input'>
+          <option>+91</option>
+          <option>+92</option>
+          <option>+93</option>
+          <option>+94</option>
+          <option>+95</option>
+          <option>+96</option>
+          <option>+97</option>
+          <option>+98</option>
+          <option>+99</option>
+        </select>
+        <input
+          class='input'
+          type='number'
+          placeholder='Enter your mobile number'
+        />
+      </div>
+      <p class='label'>Gender</p>
+      <div
+        style='display: flex; align-items: center;margin-top: 4px;margin-bottom: 1rem;'
+      >
+        <input type='radio' class='radioinput' />
+        <label class='radiolabel'>Male</label>
+        <input type='radio' class='radioinput' />
+        <label class='radiolabel'>Female</label>
+        <input type='radio' class='radioinput' />
+        <label class='radiolabel'>Prefer not to say</label>
+      </div>
+      <label class='label'>Date of Birth</label>
+      <input class='input' type='date' placeholder='Enter your date of birth' />
+      <label class='label'>Address</label>
+      <textarea
+        style='padding-top: 4px;'
+        rows='3'
+        class='input'
+        placeholder='Enter your address'></textarea>
+      <div style='display: flex; align-items: center; margin-bottom: 1.6rem;'>
+        <input class='input checkbox' type='checkbox' />
+        <p class='label' style='margin-bottom: 1rem;'>
+          Receive recruiter notifications on WhatsApp
+        </p>
+      </div>
+      <button class='button'>Continue</button>
+    </form>
+  </section>
+</section>
+
+<style>
+  .header {
+    background-color: #f7f2fa;
+    padding: 15px;
+    text-align: center;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1188px;
+    width: 100%;
+  }
+
+  #logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+
+  .header-text {
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-left: 2px solid #c599e5;
+    padding-left: 20px;
+    align-self: flex-start;
+    margin-top: 0;
+  }
+
+  #login-text {
+    color: #e119a0;
+  }
+
+  .registerationsection {
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .listitems {
+    list-style-type: none;
+  }
+
+  .listItem {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    min-width: 16rem;
+    padding-top: 1.6rem;
+    opacity: 0.7;
+  }
+
+  .active {
+    opacity: 1;
+  }
+
+  .levelcirle {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #dedddd;
+    border-radius: 100%;
+    color: #dedddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+    position: relative;
+  }
+
+  .progress-text {
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1rem;
+    color: #1d1934;
+  }
+
+  .progress-text span {
+    color: #000;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .activecirle {
+    border: 2px solid #6e00be !important;
+    color: #000;
+  }
+
+  .activecirle::before {
+    background-color: #6e00be !important;
+  }
+
+  .levelcirle::before {
+    background-color: #dedddd;
+    content: '';
+    height: 63%;
+    left: 50%;
+    position: absolute;
+    top: -50%;
+    width: 2px;
+    z-index: -1;
+  }
+
+  .listicon {
+    width: 22px;
+    height: 22px;
+    margin-left: 10px;
+    position: absolute;
+    right: 0;
+  }
+
+  .progressbox {
+    position: absolute;
+    left: 0;
+    top: -20px;
+  }
+
+  .registrationform {
+    overflow-y: auto;
+    margin-left: auto;
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 500px;
+  }
+
+  .formheading {
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+
+  .formcaption {
+    font-size: 12px;
+    margin-bottom: 1rem;
+    color: gray;
+    margin-bottom: 0;
+  }
+
+  .tag {
+    font-size: 14px;
+    margin-bottom: 0;
+    background-color: #f0fdf4;
+    padding: 3px;
+    color: #16a34a;
+    border-radius: 5px;
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .label {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .input {
+    width: 90%;
+    height: 40px;
+    border: 1px solid #dedddd;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 1.6rem;
+  }
+
+  .input:focus {
+    outline: none;
+    border: 2px solid #6e00be;
+  }
+
+  .countrycode {
+    width: 20%;
+    height: 40px;
+    border: 1px solid #dedddd;
+    border-radius: 5px;
+    padding-left: 10px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+  }
+
+  .mobileinput {
+    display: flex;
+  }
+
+  .mobileinput > input {
+    width: calc(70% - 1rem);
+  }
+
+  .radioinput {
+    margin-right: 5px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .radiolabel {
+    font-size: 12px;
+    margin-right: 2rem;
+  }
+
+  .checkbox {
+    width: 20px !important;
+    height: 20px !important;
+    margin-bottom: 4px;
+  }
+
+  .button {
+    width: 40%;
+    height: 40px;
+    background-color: #6e00be;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+  }
+</style>

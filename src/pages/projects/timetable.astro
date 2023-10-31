@@ -3,9 +3,15 @@ import Layout from '../../layouts/Layout.astro';
 import Main from '../../layouts/Main.astro';
 ---
 
-<Layout title='WT Projects | Time Table'>
+<Layout title='Projects | Time Table'>
   <Main>
     <h1>Time Table</h1>
+
+    <a href='/'>
+      <span> ←</span>
+       Go Back
+    </a>
+
     <div style='margin-top: 1rem;'>
       <table>
         <thead>
@@ -101,5 +107,16 @@ import Main from '../../layouts/Main.astro';
     padding: 1rem;
     text-align: center;
     border: 1px solid #ddd;
+  }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 600;
+    color: #007fff;
   }
 </style>
